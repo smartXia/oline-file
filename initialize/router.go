@@ -32,7 +32,8 @@ func Routers() *gin.Engine {
 	//PrivateGroup.Use(middleware.JWTAuth()).Use(middleware.CasbinHandler())
 	PrivateGroup.Use()
 	{
-		router.InitDocsRouter(PrivateGroup) //文章增删改查
+		router.InitDocsRouter(PrivateGroup)   //文章增删改查
+		router.InitImagesRouter(PrivateGroup) //图片增删改查
 	}
 
 	global.GVA_LOG.Info("router register success")
