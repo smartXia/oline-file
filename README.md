@@ -1,1 +1,1 @@
-git@github.com:smartXia/oline-file.git
+# 中台模板 后端 go框架
