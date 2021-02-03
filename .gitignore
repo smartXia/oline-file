@@ -1,5 +1,5 @@
 /temp/*
 /gin.log
-/log
+
 .idea/
 /app/lib
