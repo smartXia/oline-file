@@ -7,13 +7,13 @@ import (
 )
 
 func InitImagesRouter(Router *gin.RouterGroup) {
-	ImagesRouter := Router.Group("xa_images").Use(middleware.OperationRecord())
+	ImagesRouter := Router.Group("images").Use(middleware.OperationRecord())
 	{
-		ImagesRouter.POST("createImages", v1.CreateImages)   // 新建Images
-		ImagesRouter.DELETE("deleteImages", v1.DeleteImages) // 删除Images
+		ImagesRouter.POST("createImages", v1.CreateImages)             // 新建Images
+		ImagesRouter.DELETE("deleteImages", v1.DeleteImages)           // 删除Images
 		ImagesRouter.DELETE("deleteImagesByIds", v1.DeleteImagesByIds) // 批量删除Images
-		ImagesRouter.PUT("updateImages", v1.UpdateImages)    // 更新Images
-		ImagesRouter.GET("findImages", v1.FindImages)        // 根据ID获取Images
-		ImagesRouter.GET("getImagesList", v1.GetImagesList)  // 获取Images列表
+		ImagesRouter.PUT("updateImages", v1.UpdateImages)              // 更新Images
+		ImagesRouter.GET("findImages", v1.FindImages)                  // 根据ID获取Images
+		ImagesRouter.GET("getImagesList", v1.GetImagesList)            // 获取Images列表
 	}
 }

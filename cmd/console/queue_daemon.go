@@ -2,8 +2,8 @@ package main
 
 import (
 	//"net/http/pprof"
-	"online_file/jobs"
-	"online_file/queue"
+	"online_file/cmd/jobs"
+	"online_file/cmd/queue"
 )
 
 func main() {

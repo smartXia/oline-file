@@ -7,7 +7,7 @@ import (
 
 // 如果含有time.Time 请自行import time包
 type Docs struct {
-	global.GVA_MODEL
+	global.GvaModel
 	AccountId  string `json:"accountId" form:"accountId" gorm:"column:account_id;comment:中台用户唯一标识;type:varchar(32);size:32;"`
 	Appkey     string `json:"appkey" form:"appkey" gorm:"column:appkey;comment:通道标识;type:varchar(32);size:32;"`
 	Channel    int    `json:"channel" form:"channel" gorm:"column:channel;comment:通道标识;type:int;size:10;"`

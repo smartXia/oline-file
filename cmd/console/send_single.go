@@ -1,8 +1,8 @@
 package main
 
 import (
-	"online_file/jobs"
-	"online_file/queue"
+	"online_file/cmd/jobs"
+	"online_file/cmd/queue"
 	"strconv"
 )
 

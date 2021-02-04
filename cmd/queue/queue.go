@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"github.com/streadway/amqp"
 	"log"
-	"online_file/jobs"
+	"online_file/cmd/jobs"
 	"online_file/utils"
 )
 
